@@ -1,0 +1,173 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    /* Removes the element from the normal document flow */
+    width: 1px;
+    /* Reduces the width of the element */
+    height: 1px;
+    /* Reduces the height of the element */
+    margin: -1px;
+    /* Ensures the element doesn't take up space */
+    padding: 0;
+    /* Removes any padding */
+    border: 0;
+    /* Removes any border */
+    clip: rect(0, 0, 0, 0);
+    /* Clips the element to make it effectively invisible */
+    overflow: hidden;
+    /* Ensures no content spills out */
+    white-space: nowrap;
+    /* Prevents any text from wrapping */
+}
+
+.title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: #2E2F42;
+}
+
+.subtitle{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.text{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/*=====HEADER=====*/
+.header {}
+
+.header-logo {}
+
+.header-logo-img {}
+
+.header-nav {}
+
+.header-menu-list {}
+
+.header-menu-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.header-address {
+    font-style: normal;
+}
+
+.header-address-list {}
+
+.header-address-item {}
+
+.header-address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/*==========*/
+/*=====HERO=====*/
+.hero {
+    background-color: #2E2F42;
+}
+
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+/*==========*/
+/*=====ADVANTAGES=====*/
+.advantages {}
+
+.advantages-title {}
+
+.advantages-list {}
+
+.advantages-item {}
+
+.advantages-item-title {}
+
+.advantages-item-text {}
+/*==========*/
+/*=====TEAM=====*/
+.team {
+    background-color: #D9D9D9;
+}
+
+.team-title {
+}
+
+.team-list {}
+
+.team-item {}
+
+.team-item-img {}
+
+.team-item-title {
+    text-align: center;
+
+}
+
+.team-item-text {
+    text-align: center;
+}
+/*==========*/
+/*=====PORTFOLIO=====*/
+.portfolio {}
+
+.portfolio-title {
+}
+
+.portfolio-list {}
+
+.portfolio-item {}
+
+.portfolio-item-title {}
+
+.portfolio-item-text {}
+/*==========*/
+/*=====FOOTER=====*/
+.footer {
+    background-color: #2E2F42;
+}
+
+.footer-text {
+    color: #F4F4FD;
+}
+/*==========*/
