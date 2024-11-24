@@ -128,11 +128,29 @@ main {
 }
 
 .header-menu-item {
+    position: relative;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    cursor: pointer;
+}
+
+.header-menu-item:hover{
+    color: #404BBF;
+}
+
+.header-menu-item:hover::after{
+    content:'';
+    position: absolute;
+    left: 50%;
+    bottom: -24px;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background-color: #404BBF;
 }
 
 .header-address {
@@ -159,6 +177,12 @@ main {
     background-color: #2E2F42;
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: url(/images/dark-bg.svg),
+    url(/images/hero-bg.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 .hero-title {
@@ -289,10 +313,37 @@ main {
     overflow: hidden;
 }
 
+.portfolio-item:hover .portfolio-cover-container{
+    transform: translateY(0);
+}
+
+.portfolio-wrapper{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
 .portfolio-item-img {
-    width: 100%;
-    display: block;
-    margin-bottom: 32px
+}
+
+.portfolio-cover-container{
+    position: absolute;
+    top: 0;
+    background-color: #4D5AE5;
+    height: 100%;
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    transform: translateY(100%);
+    transition: transform 1000ms linear;
+}
+
+.portfolio-cover-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
 }
 
 .portfolio-item-subcontainer{
